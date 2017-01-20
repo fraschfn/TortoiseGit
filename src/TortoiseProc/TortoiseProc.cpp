@@ -279,7 +279,7 @@ BOOL CTortoiseProcApp::InitInstance()
 	{
 		CString url = parser.GetVal(L"urlhandler");
 		if (CStringUtils::StartsWith(url, L"tgit://clone/"))
-			url = url.Mid(13); // 21 = "tgit://clone/".GetLength()
+			url = url.Mid(13); // 13 = "tgit://clone/".GetLength()
 		else if (CStringUtils::StartsWith(url, L"github-windows://openRepo/"))
 		{
 			url = url.Mid(26); // 26 = "github-windows://openRepo/".GetLength()
